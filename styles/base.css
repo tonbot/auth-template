@@ -15,8 +15,8 @@
 body{
     display: flex;
     font-family: "Poppins", sans-serif;
-    height: calc(100vh + 150px);
-    padding: 50px 20px;
+    min-height: calc(100vh + 150px);
+    padding: 70px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,10 +25,28 @@ body{
     font-style: normal;
     
 }
+
+a{
+    color: var(--primary-color-deep);
+    font-weight: 200;
+    text-align: center;
+}
+
+a:hover{
+  font-weight: 300;
+}
+
+body > :first-child{
+    text-align: center;
+    padding: 10px 0;
+}
+
 main{
     background-color: var(--accent-color-gray2);
     width: 90%;
 }
+
+
 
 /* title wrapper start here */
 .title-wrapper{
@@ -51,14 +69,21 @@ main{
 .form-wrapper {
     padding: 50px 40px;
 }
+
+.form-wrapper > :first-child{
+    padding-bottom: 50px;
+    font-weight: 200;
+}
+
 .form-wrapper label{
     display: block;
-    line-height: 3;
+    line-height: 2;
     font-weight: 300;
 }
 .form-wrapper input{
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
 }
 .form-wrapper .btn-wrapper{
     width: 100%;
